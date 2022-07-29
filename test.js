@@ -44,6 +44,7 @@ if(choiceImport.checked) {
             calculatedTotal = tonInput * 86;
         }
     } else {
+        // Containerized
         if(rail.checked){
             if(twentyFeet.checked){
                 calculatedTotal = twentyContainerAmountInput * 2305;
@@ -58,7 +59,7 @@ if(choiceImport.checked) {
                 calculatedTotal = twentyContainerAmountInput * 2455;            
             }
             else{
-                calculatedTotal = fortyContainerAmountInput * 3855
+                calculatedTotal = fortyContainerAmountInput * 3855;
             }
         }
     }

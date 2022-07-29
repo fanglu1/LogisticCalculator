@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Get an Estimate</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Get an Estimate</h4>
+        </div>
+        <div class="modal-body">
+            <h1 class="title">Shipping Estimate Price</h1>
+            <div class="tip">
+              <br />
+              <form >
+                <p>Please select Import or Export:</p>
+                <input type="radio" id="import" name="Import or Export" value="import">
+                <label for="import">Import</label><br>
+                <input type="radio" id="export" name="Import or Export" value="export">
+                <label for="export">Export</label><br>
+
+                <p>Please select Break Bulk or Containerized:</p>
+                <input type="radio" id="bulk" name="Bulk or Container" value="bulk">
+                <label for="bulk">Break Bulk</label><br>
+                <input type="radio" id="container" name="Bulk or Container" value="container">
+                <label for="container">Containerized</label><br>
+              
+                <p>Please select Mode of Transportation:<br>(Unimodal-From Djibouti to Addis Ababa. Contact us for more destination rates.)</p>
+
+                <input type="radio" id="truck" name="Transportation" value="truck">
+                <label for="truck">Truck</label><br>
+                <input type="radio" id="rail" name="Transportation" value="rail">
+                <label for="rail">Rail</label><br>
+
+                <p>If shipping by Break Bulk, choose Tons and enter the amount of tons of the goods. <br> If shipping by Container, choose 20 or 40 feet container and enter how many containers will be needed.</p>
+
+                <input type="radio" id="twentyFeet" name="Shipping Amount" value="twentyFeet"> <label>Number of 20 Feet containers:</label><input id="twentyContainerAmount"><br>
+                <input type="radio" id="fortyFeet" name="Shipping Amount" value="fortyFeet"> <label>Number of 40 feet containers:</label> <input id="fortyContainerAmount"><br>
+                <input type="radio" id="tons" name="Shipping Amount" value="tons"> <label>Tons:</label> <input id="bulkTonAmount" />
+              </form>
+              <br>
+              <label>Total:</label><input id="total" disabled /> <br /><br />
+              <button id="calculate" >Calculate</button>
+              <br /><br />
+              <p>Contact us for more accurate rates.</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="test.js"></script>
+</body>
+</html>
